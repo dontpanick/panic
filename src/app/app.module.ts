@@ -12,6 +12,8 @@ import { CoinexComponent } from './coinex/coinex.component';
 import { CointableComponent } from './cointable/cointable.component';
 import { CoinDetailComponent } from './coin-detail/coin-detail.component';
 import { MessageComponent } from './message/message.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { MessageComponent } from './message/message.component';
     CoinexComponent,
     CointableComponent,
     CoinDetailComponent,
-    MessageComponent
+    MessageComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { MessageComponent } from './message/message.component';
     MatMenuModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
