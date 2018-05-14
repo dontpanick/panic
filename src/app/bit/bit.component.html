@@ -1,0 +1,8 @@
+<h2>My List</h2>
+<ul class="heroes">
+    <li *ngFor="let coin of listnew" [class.selected]="coin === selectedCoin" (click)="onSelect(coin)">
+        <span class="badge">{{coin.id}}</span>{{coin.name}}
+    </li>
+</ul>
+
+<app-coin-detail [coin]="selectedCoin"></app-coin-detail>
